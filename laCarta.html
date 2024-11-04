@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Restaurant l'Era - La Carta</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="img/logo.ico">
+	<script src="Script/script.js"></script>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<style>
+			.lang-section {
+				display: none; /* Ocultar por defecto todas las secciones */
+			}
+			.active {
+				display: block; /* Mostrar la sección activa */
+			}
+		</style>
+		<script>
+			function showLanguage(lang) {
+				// Ocultar todas las secciones
+				var sections = document.querySelectorAll('.lang-section');
+				sections.forEach(section => section.classList.remove('active'));
+	
+				// Mostrar la sección seleccionada
+				var selectedSection = document.getElementById(lang);
+				selectedSection.classList.add('active');
+			}
+		</script>
+</head>
+
+<body>
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Restaurant <span>l'Era</span></h2>
+			<ul>
+				<li><a href="index.html">Inici</a></li>
+				<li><a href="laCarta.html">La nostra Carta</a></li>
+				<li><a href="momentos.html">Moments únics</a></li>
+			</ul>
+		</nav>
+		<div class="content">
+			<h1>La Nostra  <span>Carta</span></h1>
+		</div>
+	</div>
+
+	<section class="muestra-carta">
+		<h2>Carta del dia</h2>
+		<div class="button-container">
+			<button onclick="showLanguage('spanish')">Castellano</button>
+			<button onclick="showLanguage('catalan')">Català</button>
+			<button onclick="showLanguage('english')">English</button>
+			<button onclick="showLanguage('french')">Français</button>
+		</div>
+		<div>
+			<div id="spanish" class="lang-section">
+				
+				<img class="carta" src="img/castellano.jpg" alt="">
+			</div>
+			<div id="catalan" class="lang-section">
+				
+				<img class="carta" src="img/catalan.jpg" alt="">
+			</div>
+			<div id="english" class="lang-section">
+				
+				<img class="carta" src="img/english.jpg" alt=""> 
+			</div>
+			<div id="french" class="lang-section">
+				
+				<img class="carta" src="img/francais.jpg" alt=""> 
+			</div>
+		</div>
+
+		<div class="vinos">
+			<h2>Carta de vins / Carta de vinos</h2>
+			<img src="img/vinos.jpg" alt="">
+		</div>
+		
+	</section>
+	
+	
+	
+
+
+	<footer>
+		<p>Restaurant l'Era</p>
+		<p>Coneix-nos més:</p>
+		<div class="social">
+			<a href="https://www.instagram.com/restaurant.lera/#"><i class="fab fa-instagram"></i></a>
+			<a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=barrestaurantelera@gmail.com"><i class="fas fa-envelope"></i></a>
+		</div>
+		<a href="https://creativecommons.org/licenses/by/4.0/" class="end">Creative Commons</a>
+		
+	</footer>
+</body>
+
+</html>
