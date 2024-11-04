@@ -110,7 +110,7 @@ h1 {
 h3 {
     color: white;
     font-size: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
 h4 {
@@ -158,8 +158,9 @@ h4 {
         align-items: center; /* Centrar elementos en columna */
     }
 
-    button {
-        width: auto; /* Botones de ancho automático */
+	button {
+        width: 90%; /* Ancho adaptado para móviles */
+        max-width: 300px; /* Máximo ancho para mantener la proporción */
     }
 
     .about-text {
@@ -174,6 +175,10 @@ h4 {
     footer p {
         font-size: 16px; /* Ajuste del tamaño de fuente */
     }
+	
+
+	
+
 }
 
 /* Estilos para el selector de idiomas */
@@ -284,12 +289,12 @@ nav ul li a {
 h1 {
 	color: white;
 	margin: 20px 0px 20px;
-	font-size: 75px;
+	font-size: 100px;
 }
 
 h3 {
 	color: white;
-	font-size: 25px;
+	font-size: 35px;
 	margin-bottom: 50px;
 }
 
