@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Restaurant l'Era - La Carta</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="img/logo.ico">
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag para responsividad -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+</head>
+
+<body>
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Restaurant <span>l'Era</span></h2>
+			<ul>
+				<li><a href="index.html">Inici</a></li>
+				<li><a href="laCartaCa.html">La nostra Carta</a></li>
+				<li><a href="momentsCa.html">Moments únics</a></li>
+				<li>
+                    <select id="language-selector" onchange="changeLanguage()">
+                        <option value="ca" selected>Català</option>
+                        <option value="es">Castellano</option>
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </li>
+			</ul>
+		</nav>
+		<div class="content">
+			<h1>La Nostra  <span>Carta</span></h1>
+		</div>
+	</div>
+
+	<section class="muestra-carta">
+		<h2>Carta del dia</h2>
+		<div>
+			<div id="catalan" class="lang-section">
+				
+				<img class="carta" src="img/catalan.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="vinos">
+			<h2>Carta de vins</h2>
+			<img src="img/vinos.jpg" alt="">
+		</div>
+		
+	</section>
+	
+
+	<footer>
+		<p>Restaurant l'Era</p>
+		<p>Coneix-nos més:</p>
+		<div class="social">
+			<a href="https://www.instagram.com/restaurant.lera/#"><i class="fab fa-instagram"></i></a>
+			<a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=barrestaurantelera@gmail.com"><i class="fas fa-envelope"></i></a>
+		</div>
+		<a href="https://creativecommons.org/licenses/by/4.0/" class="end">Creative Commons</a>
+		
+	</footer>
+	<script src="Script/script.js"></script>
+</body>
+
+</html>

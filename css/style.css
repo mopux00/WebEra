@@ -8,8 +8,197 @@
 	  margin: 1em 2em;
 	}
 
+}/***************************************/
+/* Importación de fuentes de google fonts */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+/* Estilo general para asegurar que la página se ajuste bien a móviles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%; /* Ajuste de altura general */
 }
 
+/* Botones */
+button {
+    height: 35px; /* Ajuste de altura del botón */
+    padding: 5px 10px; /* Ajuste del espaciado interno */
+    margin: 10px 0; /* Espaciado superior e inferior */
+    text-transform: uppercase;
+    border: solid 2px transparent;
+    border-radius: 5px; /* Bordes redondeados más pequeños */
+    cursor: pointer;
+    background-color: #836000;
+    color: white;
+    transition: background-color 0.4s, border-color 0.4s;
+    font-size: 14px; /* Ajuste de tamaño de fuente */
+}
+
+/* Estilo del héroe */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%; /* Ajuste de padding para móviles */
+    position: fixed; /* Fijar navegación en la parte superior */
+    top: 0;
+    width: 100%; /* Asegurar que ocupa todo el ancho */
+    background-color: rgba(34, 34, 34, 0.8); /* Fondo semi-transparente */
+    z-index: 1000; /* Asegurar que se muestra sobre otros elementos */
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 28px; /* Ajuste del tamaño del logo */
+}
+
+/* Menú de navegación */
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas */
+    justify-content: flex-end; /* Alinear a la derecha */
+}
+
+nav ul li {
+    padding: 5px 10px; /* Espaciado alrededor de los elementos del menú */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    position: fixed; /* Fijar navegación en la parte superior */
+    top: 0; /* Inicialmente en la parte superior */
+    width: 100%; /* Asegurar que ocupa todo el ancho */
+    background-color: rgba(17, 17, 17, 0.8);
+    z-index: 1000; /* Asegurar que se muestra sobre otros elementos */
+    transition: top 0.3s; /* Suavizar la transición */
+}
+
+
+/* Contenido del héroe */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+/* Encabezados */
+h1 {
+    color: white;
+    margin: 20px 0;
+    font-size: 75px;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+/* Sección sobre nosotros */
+.about {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #191919;
+}
+
+.about img {
+    max-width: 100%; /* Ajuste de imagen */
+    height: auto;
+    margin: 30px;
+}
+
+.about-text {
+    max-width: 90%; /* Ajuste de texto para móviles */
+    margin: 0 auto;
+    padding: 0 20px; /* Añadir espaciado interno para el texto */
+}
+
+/* Consultas de medios para dispositivos móviles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px; /* Ajuste de tamaño de fuente */
+    }
+
+    h3 {
+        font-size: 20px; /* Ajuste de tamaño de fuente */
+    }
+
+    .main {
+        flex-direction: column; /* Cambiar la dirección del flex para móviles */
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menú en columna para móviles */
+        align-items: center; /* Centrar elementos en columna */
+    }
+
+    button {
+        width: auto; /* Botones de ancho automático */
+    }
+
+    .about-text {
+        text-align: center; /* Centrar texto en móviles */
+        padding: 0 10px; /* Espaciado adicional para dispositivos móviles */
+    }
+
+    .contact-me p {
+        font-size: 24px; /* Ajuste del tamaño de fuente */
+    }
+
+    footer p {
+        font-size: 16px; /* Ajuste del tamaño de fuente */
+    }
+}
+
+/* Estilos para el selector de idiomas */
+#language-selector {
+    padding: 5px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de la fuente */
+    border: 2px solid #ffffff; /* Color del borde blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: #333333; /* Fondo oscuro */
+    color: #ffffff; /* Color del texto blanco */
+    transition: background-color 0.3s, border-color 0.3s; /* Transiciones suaves */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+}
+
+/* Cambiar el fondo y el color del borde al pasar el mouse */
+#language-selector:hover {
+    background-color: #634b08; /* Fondo verde */
+    color: white; /* Texto blanco */
+    border-color: #b38915; /* Color del borde más oscuro */
+}
+
+
+
+
+/*********************************************/
 body {
 	height: 200%;
 	font-family: 'Noto Sans', sans-serif;
@@ -152,7 +341,7 @@ h4 {
 	color: rgba(0, 0, 0, 0.8);
 	letter-spacing: 1px;
 	line-height: 28px;
-	font-size: 18px;
+	font-size: 23px;
 	margin-bottom: 45px;
 }
 
@@ -399,7 +588,7 @@ img{
 
 .harley-texto h3 {
     color: #b38915; 
-    font-size: 20px; 
+    font-size: 23px; 
     text-transform: capitalize; 
     margin-bottom: 10px; 
 }
@@ -408,7 +597,7 @@ img{
     color: white; 
     letter-spacing: 1px; 
     line-height: 28px; 
-    font-size: 18px; 
+    font-size: 22px; 
     margin-bottom: 100px; 
 }
 
@@ -422,3 +611,22 @@ img{
 .harley-image:hover {
     transform: scale(1.2); 
 }
+/* Estilos para el selector de idiomas */
+#language-selector {
+    padding: 8px 12px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de la fuente más pequeño */
+    border: 2px solid #ffffff; /* Color del borde blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: #333333; /* Fondo oscuro */
+    color: #ffffff; /* Color del texto blanco */
+    transition: background-color 0.3s, border-color 0.3s; /* Transiciones suaves */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+}
+
+/* Cambiar el fondo y el color del borde al pasar el mouse */
+#language-selector:hover {
+    background-color: #634b08; /* Fondo verde */
+    color: white; /* Texto blanco */
+    border-color: #b38915; /* Color del borde más oscuro */
+}
+

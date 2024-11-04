@@ -48,3 +48,37 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', setActiveButton);
     });
 });
+
+
+function changeLanguage() {
+    const language = document.getElementById("language-selector").value;
+    if (language === "ca") {
+        window.location.href = "index.html"; // Redirige a la versión en catalán
+    } else if (language === "es"){
+        window.location.href = "indexEs.html"; // Redirige a la versión en castellano
+    } else if (language === "en"){
+        window.location.href = "indexEn.html"; // Redirige a la versión en castellano
+    } else if (language === "fr"){
+        window.location.href = "indexFr.html"; // Redirige a la versión en castellano
+    }
+}
+
+/**** */
+
+
+let lastScrollTop = 0; // Variable para almacenar la posición anterior del scroll
+const navbar = document.querySelector('nav'); // Seleccionar el menú de navegación
+
+window.addEventListener('scroll', function() {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop; // Obtener la posición actual del scroll
+
+    if (currentScroll > lastScrollTop) {
+        // El usuario se desplaza hacia abajo
+        navbar.style.top = "-110px"; // Ajusta este valor según la altura de tu menú
+    } else {
+        // El usuario se desplaza hacia arriba
+        navbar.style.top = "0"; // Mostrar el menú
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para evitar valores negativos
+});
